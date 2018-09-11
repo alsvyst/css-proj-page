@@ -102,10 +102,15 @@ header .nav-list .nav-list__item a:hover::before {
     }
 
     header .nav-list {
-        top: 75px;
+        height: 0;
+        top: 50px;
         bottom: auto;
         flex-wrap: wrap;
         display: none;
+    }
+
+    header .nav-list .nav-list__item a {
+        height: 50px;
     }
 
     header .nav-list .nav-list__item a::after,
@@ -119,7 +124,7 @@ header .nav-list .nav-list__item a:hover::before {
         justify-content: center;
         align-items: center;
         text-transform: uppercase;
-        height: 75px;
+        height: 50px;
         background-color: #1A96CD;
         color: #fff;
         box-shadow: 0 2px 10px -3px rgba(0,0,0,0.75);
@@ -127,5 +132,6 @@ header .nav-list .nav-list__item a:hover::before {
 
     nav:hover .nav-list {
         display: flex;
+        height: auto;
     }
 }

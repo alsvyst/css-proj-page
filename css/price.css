@@ -29,3 +29,16 @@
     margin-top: 10px;
     font-size: 10px;
 }
+
+@supports not (clip-path: polygon(50% 0, 100% 20%, 100% 100%, 0 100%, 0 20%)) {
+    #price {
+        padding-top: 60px;
+    }
+}
+
+/* For IE */
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    #price {
+        padding-top: 60px;
+    }
+}
