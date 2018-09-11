@@ -1,0 +1,37 @@
+.contact {
+    padding: 60px 20px;
+    text-align: center;
+    position: relative;
+}
+
+.contact .caption {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.contact .container_contact .link_contact {
+    display: block;
+    margin: 0 auto;
+    width: max-content;
+}
+
+.contact .container_contact .link_contact + .link_contact{
+    margin-top: 10px;
+}
+
+.contact::before, .contact::after {
+    display: block;
+    content: '';
+    height: 10px;
+    border-top: 5px dotted #1A96CD;
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translateY(-50%);
+    width: 25%;
+}
+
+.contact::after {
+    right: 10%;
+    left: auto;
+}
