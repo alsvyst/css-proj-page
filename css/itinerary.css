@@ -1,0 +1,128 @@
+#itinerary {
+    padding-top: 170px;
+}
+
+#itinerary .itinerary-list {
+    position: relative;
+    height: 620px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#itinerary .itinerary-list::before {
+    height: 226px;
+    width: 66%;
+    content: '';
+    display: block;
+    position: absolute;
+    top: 102px;
+    left: 34%;
+    border-top: 5px dotted #1A96CD;
+    border-right: 5px dotted #1A96CD;
+    border-bottom: 5px dotted #1A96CD;
+    border-bottom-right-radius: 120px;
+    border-top-right-radius: 120px;
+    z-index: -1;
+}
+
+#itinerary .itinerary-list::after {
+    height: 226px;
+    width: 70%;
+    content: '';
+    display: block;
+    position: absolute;
+    top: 323.4px;
+    left: 0.6%;
+    border-top: 5px dotted #1A96CD;
+    border-left: 5px dotted #1A96CD;
+    border-bottom: 5px dotted #1A96CD;
+    border-bottom-left-radius: 120px;
+    border-top-left-radius: 120px;
+    z-index: -1;
+    clip-path: polygon(50% 0, 50% 8%, 100% 8%, 100% 100%, 0 100%, 0 0);
+}
+
+#itinerary .itinerary-list__item {
+    position: absolute;
+    text-align: center;
+    width: 150px;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: 60px;
+    padding-top: 70px;
+    transform: translateX(-50%);
+    background-color: #fff;
+}
+
+#itinerary .itinerary-days {
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-top: 10px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    color: #1A96CD;
+}
+
+#itinerary .itinerary-list__item:first-child{
+    display: none;
+}
+
+#itinerary .itinerary-list__item:nth-child(2) {
+    top: 30px;
+    left: 30%;
+    background-image: url("../img/001-world.svg");
+}
+
+#itinerary .itinerary-list__item:nth-child(3) {
+    top: 30px;
+    left: 57%;
+    background-image: url("../img/003-pen.svg");
+}
+
+#itinerary .itinerary-list__item:nth-child(4) {
+    top: 30px;
+    left: 84%;
+    background-image: url("../img/004-map.svg");
+}
+
+#itinerary .itinerary-list__item:nth-child(5) {
+    top: 250px;
+    left: 90%;
+    background-image: url("../img/005-car.svg");
+}
+
+#itinerary .itinerary-list__item:nth-child(6) {
+    top: 250px;
+    left: 64%;
+    background-image: url("../img/010-backpack.svg");
+}
+
+#itinerary .itinerary-list__item:nth-child(7) {
+    top: 250px;
+    left: 38%;
+    background-image: url("../img/006-food-and-restaurant.svg");
+}
+
+#itinerary .itinerary-list__item:nth-child(8) {
+    top: 250px;
+    left: 12%;
+    background-image: url("../img/007-mountain.svg");
+}
+
+#itinerary .itinerary-list__item:nth-child(9) {
+    top: 474px;
+    left: 16%;
+    background-image: url("../img/008-travel.svg");
+}
+
+#itinerary .itinerary-list__item:nth-child(10) {
+    top: 474px;
+    left: 43%;
+    background-image: url("../img/002-plane.svg");
+}
+
+#itinerary .itinerary-list__item:nth-child(11) {
+    top: 474px;
+    left: 70%;
+    background-image: url("../img/009-passport.svg");
+}

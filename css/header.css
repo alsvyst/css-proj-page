@@ -1,0 +1,78 @@
+header {
+    min-height: 100vh;
+    background:  linear-gradient(to bottom, transparent 30%, rgba(0, 175, 255, 0.4) 70%),
+    url("../img/6.jpg") no-repeat center / cover;
+    position: relative;
+    overflow: hidden;
+}
+
+header .caption_1 {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    padding: 0 20px;
+}
+
+header .img_header {
+    display: none;
+}
+
+header nav h2 {
+    display: none;
+}
+
+header .nav-list {
+    display: flex;
+    color: #fff;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    align-items: center;
+    justify-content: stretch;
+    text-transform: uppercase;
+    padding-left: 80px;
+}
+
+header .nav-list .nav-list__item a {
+    position: relative;
+    display: block;
+    z-index: 1;
+    padding: 18px 40px;
+    line-height: 1.2;
+    margin-left: -2px;
+    transition: all 0.7s;
+}
+
+header .nav-list .nav-list__item a::after,
+header .nav-list .nav-list__item a::before {
+    content: '';
+    background: #1a96cd;
+    display: block;
+    transform: skewX(-37deg);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    z-index: -2;
+    box-shadow: 0 -3px 10px -3px rgba(0,0,0,0.75);
+}
+
+header .nav-list .nav-list__item:last-child a::after,
+header .nav-list .nav-list__item:last-child a::before {
+    width: calc(100% + 60px);
+}
+
+header .nav-list .nav-list__item a::before {
+    background: linear-gradient(to right, rgba(26,151,205,1) 0%, rgba(93,194,240,1) 100%);
+    position: absolute;
+    z-index: -1;
+    transition: opacity 0.5s;
+    opacity: 0;
+    box-shadow: 0 -3px 10px -3px rgba(0,0,0,0.4);
+}
+
+header .nav-list .nav-list__item a:hover::before {
+    opacity: 100;
+}

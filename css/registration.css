@@ -1,0 +1,66 @@
+#registration {
+    background: linear-gradient(to right, rgba(26,151,205,1) 0%, rgba(93,194,240,1) 100%);
+    position: relative;
+    padding: 70px 20px;
+}
+
+#registration .caption {
+    color: #fff;
+}
+
+#registration .registation_form {
+    background-color: #fff;
+    max-width: 600px;
+    margin: auto;
+    padding: 80px 100px 30px;
+    box-shadow: 0 -3px 10px -3px rgba(0,0,0,0.3);
+    border-radius: 2px;
+}
+
+#registration .registation_form p + p {
+    margin-top: 20px;
+}
+
+#registration .registation_form p:last-of-type {
+    font-size: 12px;
+}
+
+#registration .registation_form input {
+    border: 1px solid #999;
+    padding: 12px 15px 10px;
+    border-radius: 4px;
+    margin-top: 5px;
+}
+
+#registration .registation_form input[type="checkbox"] {
+    width: auto;
+    float: right;
+    margin-top: 0;
+}
+
+#registration .registation_form input[type="email"]:focus,
+#registration .registation_form input[type="text"]:focus {
+    border-color: #1A96CD;
+}
+
+#registration .registation_form input[type="button"] {
+    color: #1A96CD;
+    border: 2px solid #1A96CD;
+    padding: 12px 65px 10px;
+    text-transform: uppercase;
+    border-radius: 25px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    background-color: transparent;
+    width: auto;
+    margin: 30px auto 0;
+    display: block;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+#registration .registation_form input[type="button"]:hover {
+    color: #5DC2F0;
+    border-color: #5DC2F0;
+    padding: 12px 75px 10px;
+}

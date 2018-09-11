@@ -1,0 +1,43 @@
+#books .container_books {
+    max-width: 880px;
+    margin: auto;
+}
+
+#books  .book{
+    position: relative;
+}
+
+#books  .book img {
+    display: none;
+}
+
+#books  .book + .book {
+    margin-top: 50px;
+}
+
+#books  .book p {
+    margin-top: 10px;
+    font-size: 12px;
+}
+
+#books .buy-button {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #1A96CD;
+    border: 2px solid #1A96CD;
+    padding: 12px 15px 10px;
+    text-transform: uppercase;
+    border-radius: 25px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    transition: all 0.2s;
+}
+
+#books .buy-button:hover {
+    color: #5DC2F0;
+    border-color: #5DC2F0;
+    padding: 14px 20px 12px;
+    right: -5px;
+}
