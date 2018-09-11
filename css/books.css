@@ -3,21 +3,26 @@
     margin: auto;
 }
 
-#books  .book{
+#books .book{
     position: relative;
 }
 
-#books  .book img {
+#books .book img {
     display: none;
 }
 
-#books  .book + .book {
+#books .book + .book {
     margin-top: 50px;
 }
 
-#books  .book p {
+#books .book h3 {
+    line-height: 1.4;
+}
+
+#books .book p {
     margin-top: 10px;
     font-size: 12px;
+    line-height: 1.4;
 }
 
 #books .buy-button {
@@ -40,4 +45,15 @@
     border-color: #5DC2F0;
     padding: 14px 20px 12px;
     right: -5px;
+}
+
+@media (max-width: 770px) {
+    #books .container_books {
+        text-align: center;
+    }
+
+    #books .buy-button {
+        position: static;
+        margin-top: 50px;
+    }
 }

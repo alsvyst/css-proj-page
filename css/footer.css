@@ -35,3 +35,9 @@
     right: 10%;
     left: auto;
 }
+
+@media (max-width: 500px) {
+    .contact::before, .contact::after {
+        display: none;
+    }
+}

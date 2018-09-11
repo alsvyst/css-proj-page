@@ -36,6 +36,7 @@
 #registration .registation_form p:last-of-type {
     font-size: 12px;
     margin-top: 30px;
+    position: relative;
 }
 
 #registration .registation_form input {
@@ -47,8 +48,11 @@
 
 #registration .registation_form input[type="checkbox"] {
     width: auto;
-    float: right;
     margin-top: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
 }
 
 #registration .registation_form input[type="email"]:focus,
@@ -76,4 +80,21 @@
     color: #5DC2F0;
     border-color: #5DC2F0;
     padding: 12px 75px 10px;
+}
+
+@media (max-width: 500px) {
+    #registration .registation_form {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    #registration .registation_form p:last-of-type label {
+        display: block;
+        max-width: 90%;
+        line-height: 1.4;
+    }
+
+    #registration .registation_form::before {
+        font-size: 28px;
+    }
 }

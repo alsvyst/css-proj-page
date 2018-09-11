@@ -126,3 +126,30 @@
     left: 70%;
     background-image: url("../img/009-passport.svg");
 }
+
+@media (max-width: 770px) {
+    #itinerary {
+        padding-bottom: 70px;
+    }
+
+    #itinerary .itinerary-list {
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    #itinerary .itinerary-list::before,
+    #itinerary .itinerary-list::after {
+        display: none;
+    }
+
+    #itinerary .itinerary-list__item {
+        position: static;
+        width: 50%;
+        transform: none;
+        margin-bottom: 50px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}

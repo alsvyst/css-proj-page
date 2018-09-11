@@ -1,0 +1,27 @@
+:root {
+    /*--r: rgb(255,0,0);*/
+    --b: rgb(219, 120, 14);
+}
+
+body::after {
+    display: none;
+    content: '';
+    /*display: block;*/
+
+    font-size: 10px;
+    height: 50em;
+    width: 50em;
+    outline: 1px solid #aaa;
+
+    background:
+    radial-gradient(var(--b) 49%, transparent 50%) 50% 50% / 10em 10em,
+    linear-gradient(var(--b) 50%, var(--b) 50%) 50% 64% / 7em 10em,
+
+    radial-gradient(var(--b) 49%, transparent 50%) 50% 40% / 10em 10em
+;
+
+
+
+
+    background-repeat: no-repeat;
+}
